@@ -58,7 +58,7 @@ a = a ^ b; */
 (root1,root2) = (-b ± √b2-4ac)/2 . √b2-4ac this part is called discriminant .
  */
 
-let root1, root2;
+/* let root1, root2;
 
 let a = 1;
 let b = -6;
@@ -78,4 +78,24 @@ if (discriminant > 0) {
   root2 = -b / (2 * a) - (i * Math.sqrt(discriminant)) / (2 * a);
 }
 
-console.log(root1, root2);
+console.log(root1, root2); */
+
+// !JavaScript Program to Convert Kilometers to Miles
+
+// ?We know that 1 kilometer is equal to 0.621371 miles.
+
+function KiloToMiles(kilometer) {
+  const factor = 0.621371;
+
+  return kilometer * factor;
+}
+
+console.log(KiloToMiles(3.35));
+
+function milesToKilo(mile) {
+  const factor = 0.621371;
+
+  return mile / factor;
+}
+
+console.log(milesToKilo(2.1));
