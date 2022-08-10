@@ -24,3 +24,58 @@ console.log("The sum of " + num1 + " and " + num2 + " is: " + sum);
 // ?If a string is passed, NaN is returned.
 
 // !4. JavaScript Program to Calculate the Area of a Triangle
+
+// let area = (base * height) / 2;
+
+// Herons' formula. s = (a+b+c)/2
+//area = √(s(s-a)*(s-b)*(s-c))
+
+// !5 JavaScript Program to Swap Two Variables
+
+//create a temporary variable
+// let temp;
+
+//swap variables
+/* temp = a;
+a = b;
+b = temp; */
+
+//using destructuring assignment for swaping variables
+
+// [a, b] = [b, a];
+
+// XOR operator using Bitwise Operator
+// Link : https://www.programiz.com/javascript/bitwise-operators
+/* a = a ^ b;
+b = a ^ b;
+a = a ^ b; */
+
+// !6 Javascript Program to Solve Quadratic Equation
+
+//* ax2 + bx + c = 0, where a, b and c are real numbers and a != 0
+
+/* To find the roots of such equation, we use the formula,
+(root1,root2) = (-b ± √b2-4ac)/2 . √b2-4ac this part is called discriminant .
+ */
+
+let root1, root2;
+
+let a = 1;
+let b = -6;
+let c = 9;
+
+let discriminant = b ** 2 - 4 * a * c;
+
+// let discriminant2 = b * b - 4 * a * c;
+console.log(discriminant);
+if (discriminant > 0) {
+  root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+  root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+} else if (discriminant == 0) {
+  root1 = root2 = -b / (2 * a);
+} else if (discriminant < 0) {
+  root1 = -b / (2 * a) + (i * Math.sqrt(discriminant)) / (2 * a);
+  root2 = -b / (2 * a) - (i * Math.sqrt(discriminant)) / (2 * a);
+}
+
+console.log(root1, root2);
