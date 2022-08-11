@@ -30,7 +30,7 @@ console.log("The sum of " + num1 + " and " + num2 + " is: " + sum);
 // Herons' formula. s = (a+b+c)/2
 //area = √(s(s-a)*(s-b)*(s-c))
 
-// !5 JavaScript Program to Swap Two Variables
+// !5. JavaScript Program to Swap Two Variables
 
 //create a temporary variable
 // let temp;
@@ -50,7 +50,7 @@ b = temp; */
 b = a ^ b;
 a = a ^ b; */
 
-// !6 Javascript Program to Solve Quadratic Equation
+// !6. Javascript Program to Solve Quadratic Equation
 
 //* ax2 + bx + c = 0, where a, b and c are real numbers and a != 0
 
@@ -80,11 +80,11 @@ if (discriminant > 0) {
 
 console.log(root1, root2); */
 
-// !JavaScript Program to Convert Kilometers to Miles
+// !7. JavaScript Program to Convert Kilometers to Miles
 
 // ?We know that 1 kilometer is equal to 0.621371 miles.
 
-function KiloToMiles(kilometer) {
+/* function KiloToMiles(kilometer) {
   const factor = 0.621371;
 
   return kilometer * factor;
@@ -98,4 +98,40 @@ function milesToKilo(mile) {
   return mile / factor;
 }
 
-console.log(milesToKilo(2.1));
+console.log(milesToKilo(2.1)); */
+
+// !8. Javascript Program to Convert Celsius to Fahrenheit
+
+// !13. JavaScript Program to Check Prime Number
+
+function checkPrime(number) {
+  for (i = 2; i < number; i++) {
+    if (number % i != 0) {
+      return `${number} is a prime number`;
+    } else {
+      return "Not a Prime number";
+    }
+  }
+}
+
+console.log(checkPrime(23));
+
+lowerNumber = 5;
+higherNumber = 15;
+
+for (let i = lowerNumber; i <= higherNumber; i++) {
+  let flag = 0;
+
+  // looping through 2 to user input number
+  for (let j = 2; j < i; j++) {
+    if (i % j == 0) {
+      flag = 1;
+      break;
+    }
+  }
+
+  // if number greater than 1 and not divisible by other numbers
+  if (i > 1 && flag == 0) {
+    console.log(i);
+  }
+}
